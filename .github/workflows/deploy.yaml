@@ -26,5 +26,5 @@ jobs:
           region: eu-north-1
           version_label: ${{ github.sha }}
           deployment_package: deploy.zip
-          access_key_id: ${{ secrets.AWS_ACCESS_KEY }}
-          secret_access_key: ${{ secrets.AWS_SECRET_KEY }}
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
