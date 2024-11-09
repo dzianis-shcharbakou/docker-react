@@ -21,7 +21,7 @@ jobs:
         uses: whitechapel5991/beanstalk-deploy@v18
         with:
           application_name: frontend
-          environment_name: Frontend-env
+          environment_name: Frontend-env1
           existing_bucket_name: elasticbeanstalk-eu-north-1-970547370855
           region: eu-north-1
           version_label: ${{ github.sha }}
