@@ -15,7 +15,7 @@ jobs:
           export DOCKER_CLIENT_TIMEOUT=300
           export COMPOSE_HTTP_TIMEOUT=300
           docker build -t whitechapel5991/react-test -f Dockerfile.dev .
-      - run: docker run -e CI=true whitechapel5991/react-test npm test
+      - run: docker run whitechapel5991/react-test npm test
       
       - name: Generate deployment package
         run: zip -r deploy.zip . -x '*.git*'
