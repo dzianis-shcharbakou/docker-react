@@ -28,3 +28,4 @@ jobs:
           deployment_package: deploy.zip
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
+          environment_variables: NODE_OPTIONS=--max-old-space-size=2048
